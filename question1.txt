@@ -1,0 +1,24 @@
+Question Title: Advanced File Management
+
+Question Link:
+https://my.newtonschool.co/playground/code/4ks5o139cfoh?lecture_hash=v210chxjexei
+
+Solution:
+mkdir project-files
+cd project-files
+touch report.docx summary.docx draft.docx
+cp report.docx report_backup.docx
+mkdir old
+mv draft.docx old
+mv summary.docx final_summary.docx
+cp final_summary.docx old
+rm -r report_backup.docx
+
+Approach:
+1. First, I created a folder named project-files using the mkdir command and entered it using the cd command.
+2. Next, I created three files: report.docx, summary.docx, and draft.docx using the touch command.
+3. I created a backup of report.docx named report_backup.docx using the cp command.
+4. Then, I created a folder named old using the mkdir command and moved draft.docx into it using the mv command.
+5. I renamed summary.docx to final_summary.docx using the mv command.
+6. After that, I copied final_summary.docx into the old folder using the cp command.
+7. Finally, I deleted report_backup.docx using the rm command.
