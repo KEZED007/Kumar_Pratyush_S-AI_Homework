@@ -1,0 +1,44 @@
+Question Title: Create a Project Folder Structure
+Question Link:
+https://my.newtonschool.co/playground/code/jipp2htnvrww?lecture_hash=v210chxjexei
+
+Solution:
+
+which create-service
+cat create-service
+echo "#!/bin/bash" > create-service
+echo "mkdir service" >> create-service
+echo "mkdir -p service/controllers" >> create-service
+echo "mkdir -p service/models" >> create-service
+echo "mkdir -p service/routes" >> create-service
+echo "mkdir -p service/middleware" >> create-service
+
+echo 'echo "API Service" > service/README.md' >> create-service
+printf '%s\n' 'echo '\''console.log("Server started");'\'' > service/server.js' >> create-service
+chmod 777 create-service
+./create-service
+
+Approach:
+1. First, I used the which command to locate the create-service command.
+
+2. I used the cat command to inspect the existing script and identify the issues.
+
+3. I used echo to write the Bash shebang line into the create-service file.
+
+4. I used mkdir to create the service directory.
+
+5. I used mkdir -p to create the controllers directory inside service.
+
+6. I used mkdir -p to create the models directory inside service.
+
+7. I used mkdir -p to create the routes directory inside service.
+
+8. I used mkdir -p to create the middleware directory inside service.
+
+10. I used echo to write API Service into service/README.md.
+
+11. I used printf with proper quoting to append the command that writes console.log("Server started"); into service/server.js.
+
+12. I used chmod 777 to grant read, write, and execute permissions to all users for the create-service script.
+
+13. Finally, I executed the script using ./create-service to generate the required service structure.
