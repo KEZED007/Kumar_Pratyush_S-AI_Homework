@@ -1,0 +1,18 @@
+Question Title: Simplify the Compilation Process
+Question Link:
+https://my.newtonschool.co/playground/code/9kh4giios2j4?lecture_hash=t5qc0u6ap8tg
+
+Solution:
+touch build.sh
+echo '#!/bin/bash' > build.sh
+echo 'gcc hello.c -o hello' >> build.sh
+chmod 700 build.sh
+./build.sh
+./hello
+
+Appraoch:
+1. First, I used the touch command to create the build.sh file.
+2. Then, I used echo to add the shebang to the file.
+3. I used echo again to add the gcc command to compile hello.c into an executable named hello.
+4. Next, I used chmod 700 to give the owner read, write and execute permissions.
+5. Finally, I ran ./build.sh to compile the program and ./hello to display the output.
