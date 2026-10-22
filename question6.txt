@@ -10,7 +10,7 @@ chmod 700 build.sh
 ./build.sh
 ./hello
 
-Appraoch:
+Approach:
 1. First, I used the touch command to create the build.sh file.
 2. Then, I used echo to add the shebang to the file.
 3. I used echo again to add the gcc command to compile hello.c into an executable named hello.
