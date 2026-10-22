@@ -1,0 +1,17 @@
+Question Title: Execute a Python Script Directly
+Question Link:
+https://my.newtonschool.co/playground/code/mepmefz373b4?lecture_hash=t5qc0u6ap8tg
+
+Solution:
+touch hello.py
+echo "#!/usr/bin/env python3" > hello.py
+echo 'print("Hello from Python")' >> hello.py
+chmod 700 hello.py
+./hello.py
+
+Approach:
+1. First, I used the touch command to create the hello.py file.
+2. Then, I used echo to add the Python shebang to the file.
+3. I used echo again to add the print statement to display "Hello from Python".
+4. Next, I used chmod 700 to give the owner read, write and execute permissions.
+5. Finally, I used ./hello.py to execute the file and display the output.
