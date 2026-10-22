@@ -1,0 +1,29 @@
+Question Title: Data Breach Response
+Question Link:
+https://my.newtonschool.co/playground/code/orlr84xpc3oo?lecture_hash=vifkrugjcwth
+
+Solution:
+cd breach_response
+cp evidence/log_dump.txt log_dump.txt
+chmod 755 evidence
+mv evidence secure/evidence
+chmod 555 secure/evidence
+chmod 644 reports/incident_summary.txt
+chmod u+w reports/incident_summary.txt
+echo "Breach confirmed" >> reports/incident_summary.txt
+echo "Escalated to security team" >> reports/incident_summary.txt
+chmod 444 reports/incident_summary.txt
+echo "Forensics Complete" > secure/forensics_report.txt
+chmod 600 secure/forensics_report.txt
+
+Approach:
+1. First, I copied the log_dump.txt file to the main breach_response directory using the cp command.
+2. Then, I changed the permissions of the evidence directory using chmod 755 so that I could move it.
+3. Next, I used the mv command to move the evidence directory into the secure directory.
+4. After moving it, I changed its permissions back to 555 using chmod.
+5. Then, I changed the permissions of incident_summary.txt to allow editing.
+6. I added the line "Breach confirmed" to the incident_summary.txt file using echo.
+7. Next, I added the line "Escalated to security team" to the same file.
+8. After that, I restored the file permissions to 444 using chmod.
+9. Then, I created the forensics_report.txt file inside the secure directory and added the text "Forensics Complete".
+10. Finally, I set the permissions of forensics_report.txt to 600 and left classified.txt unchanged.
