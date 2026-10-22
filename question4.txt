@@ -9,7 +9,7 @@ chmod 770 deployment/datasets
 chmod 644 deployment/docs/OVERVIEW.md
 chmod 755 deployment/bin/*.sh
 
-Appraoch:
+Approach:
 1. First, I used the chmod 700 command to give the owner full permissions for all Python files.
 2. Then, I used chmod 770 to give the owner and group full permissions to the datasets directory.
 3. I used chmod 770 again to give the owner and group full permissions to all files inside the datasets directory.
