@@ -1,0 +1,24 @@
+Question Title: The Internship Project Setup
+Question Link:
+https://my.newtonschool.co/playground/code/5i36axzh7cl2?lecture_hash=mi7y4g3am46y
+
+Solution:
+cd client-app
+git init
+echo '<!DOCTYPE html><html><body><h1>Client App</h1><script src="app.js"></script></body></html>' > index.html
+echo 'console.log("Client App loaded");' > app.js
+git add index.html app.js
+git commit -m "Initial client files"
+git remote add origin https://github.com/startup/client-app.git
+git push -u origin main
+git log
+
+Approach:
+1. First, I used cd to enter the client-app directory.
+2. Then, I used git init to initialize the Git repository.
+3. I used echo to write HTML content into index.html and JavaScript content into app.js.
+4. Next, I used git add index.html app.js to stage only these two files.
+5. I used git commit -m "Initial client files" to commit the files.
+6. Then, I used git remote add origin to add the GitHub repository as the remote.
+7. Next, I used git push -u origin main to push the files to GitHub.
+8. Finally, I used git log to check the commit history.
